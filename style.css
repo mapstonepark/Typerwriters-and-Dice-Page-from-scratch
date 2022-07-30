@@ -1,12 +1,17 @@
-body{
-    font-size: 1.2rem;
-    color: lightslategray;
+:root{
+    --primary-clr: #afcda5;
+    --primary-acc-clr: #e5d8cc;
+    
+    
 }
 
-/* h1{
-    font-size: 1.75rem;
+body{
+    font-size: 1.2rem;
+    /* color: lightslategray; */
     
-} */
+}
+
+
 
 h2{
     font-size: 1.5rem;
@@ -29,10 +34,10 @@ p{
 
 
 ul> li> a{
-    color: #5cc6a7;
+    color: var(--primary-clr);
     line-height: 2.0rem;
     text-decoration: none;
-    border-bottom: dotted 1px #5cc6a7;
+    border-bottom: dotted 1px var(--primary-clr);
     
 }
 input,
@@ -58,10 +63,11 @@ textarea{
 }
 
 a{
-    color: slategray;
+    color: var(--primary-clr);
+    text-decoration: none;
 }
 a:hover{
-    color:#5cc6a7;
+    color:var(--primary-clr);
 }
 a > img {
     border-radius: 9px;
@@ -84,9 +90,9 @@ a.button{
     }
 
 a.button:hover{
-    color:#5cc6a7;
+    color:var(--primary-clr);
     background-color:#FFFFFF;
-    border:0.1em solid #5cc6a7;
+    border:0.1em solid var(--primary-clr);
     }
  @media all and (max-width:30em){
  a.button{
@@ -110,9 +116,9 @@ a.button:hover{
         }
     
  .button:hover{
-        color:#5cc6a7;
+        color:var(--primary-clr);
         background-color:#FFFFFF;
-        border:0.1em solid #5cc6a7;
+        border:0.1em solid var(--primary-clr);
         }
 @media all and (max-width:30em){
         .button{
