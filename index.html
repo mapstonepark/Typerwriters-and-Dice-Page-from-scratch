@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <title>Typewriters and Dice</title>
@@ -42,36 +42,41 @@
 						 </ul>
                          <!--   Articles    -->
 
-                         <ul class="actions">
+                         
 						
-							<li><a href="https://typewritersanddice.buzzsprout.com/1583491" class="button">Our Podcast</a></li>
-						</ul>
+							<h3><a href="https://typewritersanddice.buzzsprout.com/1583491" class="button">Our Podcast</a></h3>
+						
                             <article>
                             <h2>Articles</h2>
+                            <section class="blogPosts">
+                            <section>
                             <a href="images/love.jpg" class="image fit thumb"><img src="images/thumbs/lovethumb.jpg" alt="love" /></a>
 								<h3> <a href="rpg-dating.html">An RPG Dating Engine</a></h3>
 								<p>A system to allow your players to romance npcs whether they have good or bad intentions!</p>
-                            </article>
-                            <article>
+                            </section>
+                            <section>
 								<a href="images/light.jpg" class="image fit thumb"><img src="images/thumbs/lightthumbnail.jpg" alt="lightbulb" /></a>
 								<h3> <a href="inspiration.html">Inspiration Mechanic Practical Application</a> </h3>
 								<p>Are you using it to maximum affect? We got some ideas you should check out.</p>
-							</article>
+							</section>
+                            </section>
+                        </article>
                             <section class="contactForm">
                                 <h2>Contact Us</h2>
                                 <p>If there's something you want to let us know (topics to cover, feedback, suggestions on projects) feel free to send us an email here. We are also available on Twitter and on our Discord Channel!</p>
-                                <div class="row">
-                                    <div class="col-8 col-12-small">
+                                <div class="form">
+                                    <div>
                                         <form method="post" data-netlify="true" action="#">
-                                            <div class="row gtr-uniform gtr-50">
-                                                <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                                                <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                                                <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                            <div class="formInputs">
+                                                <div><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                                <div><input type="email" name="email" id="email" placeholder="Email" /></div>
+                                                <div><textarea name="message" id="message" placeholder="Message" rows="8"></textarea></div>
                                             </div>
                                         
-                                        <ul class="actions">
-                                            <li><input type="submit" value="Send Message" /></li>
-                                        </ul>
+                                        <!-- <ul class="actions">
+                                            <li><input type="submit" value="Send Message" class="button" /></li>
+                                        </ul> -->
+                                        <button class="button">Send Message</button>
                                     </form>
                                     </div>
                                     

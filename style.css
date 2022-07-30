@@ -1,32 +1,43 @@
-h1{
-    font-size: 1.75em;
-    
+body{
+    font-size: 1.2rem;
+    color: lightslategray;
 }
+
+/* h1{
+    font-size: 1.75rem;
+    
+} */
 
 h2{
-    font-size: 1.5em;
-    line-height: 3em;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 p{
-    line-height: 2.0em;
-}
-
-.main-content{
-    color: lightslategray;
+    line-height: 2.0rem;
     
 }
-a{
+
+.formInputs{
+    display: flex;
+    flex-direction: column;
+
+
+    
+}
+
+
+
+
+ul> li> a{
     color: #5cc6a7;
-    line-height: 2.0em;
+    line-height: 2.0rem;
     text-decoration: none;
     border-bottom: dotted 1px #5cc6a7;
     
 }
-input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-    textarea {
+input,
+select,
+textarea {
         -moz-appearance: none;
         -webkit-appearance: none;
         -ms-appearance: none;
@@ -34,91 +45,199 @@ input[type="text"],
         background: #f7f7f7;
         border-radius: 0.35em;
         border: solid 2px transparent;
+        margin-bottom: 5px;
         color: inherit;
         display: block;
         outline: 0;
         padding: 0 0.75em;
         text-decoration: none;
+        width: 50%;
+} 
+textarea{
         width: 100%;
 }
 
-
-
-/* @media screen and (max-width: 480px) {
+a{
+    color: slategray;
+}
+a:hover{
+    color:#5cc6a7;
+}
+a > img {
+    border-radius: 9px;
     
+    
+}
+a.button{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+   
+    font-weight:300;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+    }
 
+a.button:hover{
+    color:#5cc6a7;
+    background-color:#FFFFFF;
+    border:0.1em solid #5cc6a7;
+    }
+ @media all and (max-width:30em){
+ a.button{
+    display:block;
+    margin:0.4em auto;
+    }
+    }
+ .button{
+        display:inline-block;
+        padding:0.35em 1.2em;
+        border:0.1em solid black;
+        margin:0 0.3em 0.3em 0;
+        border-radius:0.12em;
+        box-sizing: border-box;
+        text-decoration:none;
+        /* font-family:'Roboto',sans-serif; */
+        font-weight:300;
+        color:black;
+        text-align:center;
+        transition: all 0.2s;
+        }
+    
+ .button:hover{
+        color:#5cc6a7;
+        background-color:#FFFFFF;
+        border:0.1em solid #5cc6a7;
+        }
+@media all and (max-width:30em){
+        .button{
+        display:block;
+        margin:0.4em auto;
+        }
+        }
+
+ 
+
+
+
+@media screen and (max-width: 480px) {
+    
+ h1 {
+        
+        font-size: 1em;
+        
+    }
 
 }
 
 
-@media screen and (max-width: 736px) {
+/* @media screen and (max-width: 736px) {
    
    
   
-} */
+} */ 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1157px) {
 
     .wrapper{
         display: flex;
-        flex-direction: column;
-       
-        
+        flex-direction: column; 
     }
     .consistent-sidebar{
-        background-image: url("resources/jakob-braun-vpsPRd_rz-A-unsplash.jpg");
+        display: flex;
+        background-image: url("images/dual.jpg");
         background-size: cover;
         height: 20vh;
         color: white;
         padding: 0 10%;
+        justify-content: center;
+        align-items: center;
     
     }
+
+    h1 {
+        font-size: 1.75rem;
+    }
     .main-content{
-        padding: 5% 3%;
+        padding: 5% 3%; 
         
-        
+    }
+    .consistent-sidebar img[ src="images/tdicon.png" ]{
+        border-radius: 50%;
+        width: 55%;
     }
 
 }
 
-@media screen and (min-width: 981px) {
+@media screen and (min-width: 1158px) {
+
+    body{
+        font-size: 1.2em;
+    }
     .wrapper{
         display: flex;
         height: 100vh;
         
     }
     .consistent-sidebar{
-        background-image: url("resources/stop.jpg");
+        background-image: url("images/dual.jpg");
         background-size: cover;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         color: white;
         padding: 0 10%;
         max-width: 15%;
         position: fixed;
+        
+        
        
        
+    }
+
+    h1{
+        
+        width: 20ch;
     }
     .main-content{
         padding: 5% 3%;
-        
         margin-left: 35%;
     }
-    
+
+    /*  Articles Section starting with images */
+    .blogPosts{
+        display:flex;
+        justify-content: center;
+        
+    }
+
+    .blogPosts > * {
+        padding: 5% 3%;
+    }
 
 
 
-
-
+/*  All the contents in sidebar */
 .consistent-sidebar>*{
     padding: 25% 5%;
     
+    
+    
 }
 
+/*    T and D Icon image Settings */
 .consistent-sidebar img[ src="images/tdicon.png" ]{
     border-radius: 50%;
     width: 65%;
-    
     margin-top: 10%;
+    
    
 
 }
